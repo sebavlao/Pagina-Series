@@ -1,12 +1,17 @@
 import { useEffect, useState } from "react";
-import { fetchData } from "./fetch";
+import { fetchData } from "./fetchData";
 
 export const useSerieId = (path) => {
-    const [serie, setSerie] = useState({})
+    const [serie, setSerie] = useState({});
+    const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-        fetchData(path).then(serie => setSerie(serie));
-    }, []);
+        setIsLoading(true);
+        fetchData(path).then(serie => {
+            setSerie(serie)
+            setIsLoading(false)
+        });
+    }, [path]);
 
-    return serie;
+    return { serie, isLoading }
 }

@@ -10,7 +10,7 @@ export default {
         'auto-fit-100': 'repeat(auto-fit, minmax(200px, 1fr))',
       },
       fontFamily: {
-        primary: ["Inter", "sans-serif"],
+        primary: ["Bebas Neue", "sans-serif"],
         secondary: ["Lato", "sans-serif"],
       },
     },

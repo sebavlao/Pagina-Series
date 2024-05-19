@@ -7,7 +7,7 @@ export const Info = ({name, date, genres, seasons, description}) => {
             <h4>{genres ? genres.map(genre => genre.name.split(" ")[0]).join("-") : ""}</h4>
             <h4>Seasons: {seasons ? seasons.length : ""}</h4>
         </div>
-        <p className="font-medium text-xl">{description}</p>
+        <p className="font-medium text-xl text-ellipsis overflow-hidden">{description}</p>
     </article>
     )
 }
