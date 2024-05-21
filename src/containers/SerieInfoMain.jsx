@@ -2,8 +2,8 @@ import { useParams } from "react-router-dom";
 import { useSerieId } from "../hooks/useSerieId";
 import { useSeriesList } from "../hooks/useSeriesList";
 import { useEffect } from "react";
-import { SectionDetails } from "../components/SectionDetails";
-import { SectionCateogories } from "../components/SectionCategories";
+import { SectionDetails } from "../components/serieInfoComponents/SectionDetails";
+import { SectionCateogories } from "../components/serieInfoComponents/SectionCategories";
 
 export const SectionInfo = () => {
     let { serieId } = useParams();

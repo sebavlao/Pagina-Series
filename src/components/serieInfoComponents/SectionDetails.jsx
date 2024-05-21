@@ -1,5 +1,5 @@
-import { Info } from "./serieInfoComponents/Info";
-import { Image } from "./serieInfoComponents/Image";
+import { Info } from "./Info";
+import { Image } from "./Image";
 
 export const SectionDetails = ({ serie }) => {
     return (

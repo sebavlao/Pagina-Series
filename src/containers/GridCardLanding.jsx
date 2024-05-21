@@ -1,20 +1,14 @@
-import { Card } from "../components/generalComponentes/Card";
 import { useSeriesList } from "../hooks/useSeriesList";
-import InfiniteScroll from "react-infinite-scroll-component";
+import { GridInfiniteScroll } from "../components/generalComponentes/GridInfiniteScroll";
 
-export const GridCard = () => {
-    const {series, moreSeries} = useSeriesList("/discover/tv");
+export const GridCard = ({endPoint, title}) => {
+    const {series, moreSeries} = useSeriesList(endPoint);
+    console.log(endPoint)
 
     return (
-        <section className="px-[10%]">
-            <h1 className="font-primary text-5xl font-bold text-center mb-10 mt-5">Series</h1>
-            <InfiniteScroll dataLength={series.length} next={moreSeries} hasMore={true}>
-                <ul className="grid grid-cols-auto-fit-100 gap-6 justify-items-center p-5">
-                        {series.map((serie) => (
-                            <Card key={serie.id} serieMap={serie}/>
-                        ))}
-                </ul>
-            </InfiniteScroll>
+        <section className="px-[10%] bg-[#1F1F1F] text-slate-50">
+            <h1 className="font-primary text-5xl font-bold text-center sm:mb-10 pt-5">{title}</h1>
+            <GridInfiniteScroll series={series} moreSeries={moreSeries}/>
         </section>
     );
 };

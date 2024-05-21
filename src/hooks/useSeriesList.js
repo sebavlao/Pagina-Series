@@ -12,6 +12,7 @@ export const useSeriesList = (path, params = "") => {
     const moreSeries = () => {
         setPage(page + 1)
         fetchData(path + `?page=${page + 1}`).then(seriesData => setSeries(prev => [...prev, ...seriesData.results]))
+        console.log(series)
     }
 
     return { series, moreSeries }
