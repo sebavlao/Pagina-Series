@@ -1,5 +1,5 @@
-import { Header } from "../components/Header";
-import { SectionInfo } from "../components/serieInfoPage/SectionInfo";
+import { Header } from "../containers/Header";
+import { SectionInfo } from "../containers/SerieInfoMain";
 
 
 export const SerieInfo = () => {

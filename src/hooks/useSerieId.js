@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchData } from "./fetchData";
+import { fetchData } from "../utils/fetchData";
 
 export const useSerieId = (path) => {
     const [serie, setSerie] = useState({});

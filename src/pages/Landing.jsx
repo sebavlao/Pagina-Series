@@ -1,5 +1,5 @@
-import { GridCard } from "../components/GridCard"
-import { Header } from "../components/Header"
+import { GridCard } from "../containers/GridCardLanding"
+import { Header } from "../containers/Header"
 
 export const Landing = () => {
     return (

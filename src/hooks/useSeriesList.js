@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fetchData } from "./fetchData";
+import { fetchData } from "../utils/fetchData";
 
 export const useSeriesList = (path, params = "") => {
     const [series, setSeries] = useState([]);

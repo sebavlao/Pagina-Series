@@ -1,5 +1,5 @@
-import { Card } from "./generalComponentes/Card";
-import { useSeriesList } from "../utils/useSeriesList";
+import { Card } from "../components/generalComponentes/Card";
+import { useSeriesList } from "../hooks/useSeriesList";
 import InfiniteScroll from "react-infinite-scroll-component";
 
 export const GridCard = () => {
