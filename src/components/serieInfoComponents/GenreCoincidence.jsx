@@ -6,7 +6,7 @@ export const GenreCoincidence = ({genre}) => {
 
     return (
         <>
-            <h1 className="text-slate-50 text-7xl w-[100%]">{genre.name}</h1>
+            <h1 className="text-slate-50 sm:text-5xl text-4xl lg:text-6xl xl:text-7xl w-[100%]">{genre.name}</h1>
             <GlideComponent series={series}/>
         </>
         
